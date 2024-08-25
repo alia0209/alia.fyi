@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <title>alia.fyi</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const lines = document.querySelectorAll('.ascii');
+        lines.forEach((line, index) => {
+          line.style.animationDelay = `${index * 50}ms`;
+        });
+      });
+    </script>
+  </head>
+  <style>
+    body {
+      background: #000;
+      margin: 0;
+      color: #fff;
+      font-family: monospace;
+    }
+    #body-container {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #ascii-container pre {
+      margin: 0;
+      padding: 0;
+      font-size: 0.35rem;
+      line-height: 0.35rem;
+      white-space: pre;
+    }
+    .ascii {
+      margin: 0;
+      padding: 0;
+      white-space: pre;
+      opacity: 0;
+      color: #646464;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+    .guy {
+      color: #111;
+      animation: glow 5s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
+      }
+      to {
+        text-shadow: 0 0 1px #444, 0 0 1px #444, 0 0 1px #444;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <body>
+    <div id="body-container">
+    <div id="ascii-container" data-nosnippet>
+      <pre class="ascii">                                           . :-++:-#: :::-:....   :      .  .:  .</pre>
+      <pre class="ascii">                                          :#0%000=+:    .===:::.  :. ...  :..-=:.---     .-*-</pre>
+      <pre class="ascii">                             .          .+00000#*++::*+**%==:=..=.  :  ..-=+--. .: . :.#++::</pre>
+      <pre class="ascii">                         .  .%: =    :==%0000%+-=#=-**==::*++-.=-  :::.    :.  : .::**=... :..:..  . .==-..</pre>
+      <pre class="ascii">                          *..*0%#-:--.*00000#####%+**+*+:.:=+***+*=. . =+-.==**-..== ..  ...  -    = =00*=:.</pre>
+      <pre class="ascii">                   .   .    +-0000#00+000000%#%%0%0%+======--**+=++-:-=-=:-.    .:..  .:..  ::.     .-+#=   :</pre>
+      <pre class="ascii">                   .. ..  .*0+0000#00000000000%++=.::+=---:--:---:---===**-=::=: ...:-.:-.:-  :   :*%=*=   .</pre>
+      <pre class="ascii">                   :.  -=..+0=+%#:-0000%%0%0*:-*+*%000000000000000000#+-:.-:-:.: :..::-=- .+: :-= .#:+%   :. :</pre>
+      <pre class="ascii">                     .  .*%+**:0+.=%%0*++:.=*#00000000%***+-=##+:*%#%%0000%*==-++:...--:-=:.:-*--+:+=:  :..     .</pre>
+      <pre class="ascii">                 .... .*--=. = #. ##++#- -%00000#+=:=:   --   +   *:  +*-=0#%00%*+=*=::===::*=.:.:--=  :      .  .</pre>
+      <pre class="ascii">                   -+:... -  ..  -+:0* :*0000%=*     -   -%=  *#- *#.  =  =. **%%00%%#+=-=0#*+*+:--=- ..  . -=  :</pre>
+      <pre class="ascii">                   :.   .-:   - ::.%- -#000#-::*     ++-=%000#0000000: 0* =#+* -=:*#%00%*==+#%#--. ::.-.  :-=. ..</pre>
+      <pre class="ascii">                   :.  .-+-. : . :*- *00*.-*    =  -*000000000000000000000%00*+#:*0%00%#++##+:.-::=++=.==-:.</pre>
+      <pre class="ascii">               :   :   .: -:-.=-: =.%00+%.  +: -#0000000000000%00000000%000000000000000#00*+0%%##****-=+=:=.. ::  *</pre>
+      <pre class="ascii">              .::  ..--- . =*-%#:+ *00%  ...%0000000000000000%%*0%*00000#*%000000000000000000000000000#%%%-..:.: :-=</pre>
+      <pre class="ascii">          .      ..  : . = -*.#=:*-00=-- =00000000000000*%000000%0#0000000:*00000%#0000000000000000%0*+#.-#:.:-:-.:%%</pre>
+      <pre class="ascii">         ..:     ..  . - : =-.=:*:%%*= :000000000%0000+-00=*::::+=-+%*+-%0%.=-++=+##%0000000%00*%0%#-++-:%= ==:. .=*</pre>
+      <pre class="ascii">        .   ..:. -...:   .    -.%:00-#-.00000000#%000%0*%#=  .:       .=+#%: ==+**+*%%%00000-.%=%**#+--:-==##:</pre>
+      <pre class="ascii">        :.    :  :  ..  ..   ==-%+00. %000000000:000%%#-.. +0000+      .:+%+ +==-+*%00000.=*--++----=+:.=*:.</pre>
+      <pre class="ascii">          ::..   . :  :.::.. -*-0+0=.-*000000000.0000#=-. .00#000.     :-%0+ +===*#00%00*=*+##=:=-==#.</pre>
+      <pre class="ascii">          :     :  -:.  :. .=-%=%=0=--000000000%:000#: :.  -%00%=     :+-%0-.*+##%00%:=-*##%#==-:---:</pre>
+      <pre class="ascii">           .    .::  .:. ..-.:*:0=%=:.00000000%+.=0***.              .=**%#.+##%0#+:==-=%%#---::.:</pre>
+      <pre class="ascii">         -..       .. .-.=.. -+ 0:0*-.00000000**= +0=--.:: ...    .  :=*%0:=%0%*+::::.*#0#+=: :</pre>
+      <pre class="ascii">        :        : ..   .. :.:*.0:0*-+000000%##*==.-#%#+--=:  :.   -:%00%--+=-:::  .=*-=*:.:=+.</pre>
+      <pre class="ascii">      .-      . .. .    . ::-=+:%=0%=#00000%###++++-.=0%00###:==+=%*0#+-::-==: .=#==***=: -+:</pre>
+      <pre class="ascii">      :. .  :    .    . :-==:-:+0#000000000%###*#****=:-=#%000%0%*=-..--:.  .-=+:-+=::-:=#-</pre>
+      <pre class="ascii">      .. . .        :...*#:=-++#0%00000000000000000000%0%#**++=-:::::. .- :--.. . .:+#+#*:</pre>
+      <pre class="ascii">      . .        . .:.:-:=-=%0%%%0000000#00000%000000#%0*::*:  : .:-:-::     .  :=::-+-</pre>
+      <pre class="ascii">         .   ....    ..  .--*#000*%000#0#%%-** .# .*: .+-:-:   .::         ::--:    .</pre>
+      <pre class="ascii">        :  .: .           =+#*%%%#==+=+==*#**++*#*+=:-:   .  :-:.:--:       .:*#*:==..</pre>
+      <pre class="ascii">          .  .           :%0*-%#=:.-=+:-===++=   .  :-:.:--:       .:*#*:==..</pre>
+      <pre class="ascii">            :.           %0%0*:+:.+*+**--:.::..   .:=:....      .++#%#+++-.</pre>
+      <pre class="ascii">                        :%0#*#*+#---:=*==:--..::  .::     . .:***=++*=:.</pre>
+      <pre class="ascii">                         .-...:---==++===+===. .:...  . ..---::--.:</pre>
+      <pre class="ascii">                                        :-:-===+-++==-=*-.==+-:</pre>
+      <pre class="ascii">                                                      ......</pre>
+      <br/>
+      <pre class="ascii">                                                                                             :..   :: ...   .</pre>
+      <pre class="ascii">                                                                                .  ..::- .::   .::::  :</pre>
+      <pre class="ascii">                                                                        ...::.  --::: .-.  .:=     .          :.</pre>
+      <pre class="ascii">                                                                -:- .-:+-::::-:.-:.   .             .-=+-+++-</pre>
+      <pre class="ascii">                    <span class="guy">   zxz    </span>   .-.                       .-*++***+:... .</pre>
+      <pre class="ascii">                 .. <span class="guy">  -xxx\   </span>    -#+*+---.          :-:=:...: :                                           .</pre>
+      <pre class="ascii">              :---  <span class="guy">  zoxx=.  </span>   .:.                          .                                          :</pre>
+      <pre class="ascii">                    <span class="guy"> /xxxxx*. </span>       ....      . ..                                                .-==::..</pre>
+      <pre class="ascii">     ..             <span class="guy"> xxxxxxx*.</span>                                                               ..:--+---</pre>
+      <pre class="ascii">     .    .  :      <span class="guy">=x`xxxx`x.</span>                           ...</pre>
+      <pre class="ascii">           ... .-   <span class="guy">.x`xxxx`x+</span>      -===:  --=-...                             .. :</pre>
+      <pre class="ascii">             --++   <span class="guy"> x`xxxx`x+</span>     ::.        .</pre>
+      <pre class="ascii">              .     <span class="guy">:X`xxxx`x:</span>  .    -.      -:</pre>
+      <pre class="ascii">            -       <span class="guy">   Z##z/  </span>  -...</pre>
+      <pre class="ascii">           .        <span class="guy">   dx:x-  </span>           :.:-      ..:+ .. :.            ..++--=</pre>
+      <pre class="ascii">              .     <span class="guy">   x+-x   </span>          :--++=:         ::..             ..</pre>
+      <pre class="ascii">                    <span class="guy">   x|.x   </span>           :</pre>
+      <pre class="ascii">                    <span class="guy">  /x|+x*  </span></pre>
+    </div>
+  </div>
+
+  </body>
+</html>
