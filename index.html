@@ -29,8 +29,14 @@
       top: 0;
       left: 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+    #link-container {
+      margin: 1rem;
+      margin-top: 4rem;
+      animation: fadeIn 8s ease-in-out forwards;
     }
     #ascii-container pre {
       margin: 0;
@@ -131,7 +137,9 @@
         <pre class="ascii">                    <span class="guy">   x|.x   </span>           :</pre>
         <pre class="ascii">                    <span class="guy">  /x|+x*  </span></pre>
       </div>
+      <div id="link-container">
+        <a href="https://x.com/alia0209"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>x</title><g fill="#ffffff"><polygon points="14.457 20.202 5.876 30 1.123 30 12.237 17.304 14.457 20.202" fill="#ffffff"></polygon><polygon points="17.051 10.988 24.908 2 29.658 2 19.251 13.902 17.051 10.988" fill="#ffffff"></polygon><path d="M31.488,30h-9.559L.512,2H10.313L31.488,30Zm-8.248-2.843h2.632L8.883,4.694h-2.824L23.241,27.157Z" fill="#ffffff"></path></g></svg></a>
+      </div>
     </div>
-
   </body>
 </html>
